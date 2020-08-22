@@ -7,6 +7,9 @@ export default class Preloader extends Phaser.Scene {
   }
   preload() {
     this.load.image('bg', 'assets/images/bg.jpg')
+    this.load.audio('testAudio', [
+      'assets/audio/test.ogg'
+    ])
   }
   create() {
     this.scene.start(Keys.GameScene)
